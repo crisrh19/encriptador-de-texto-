@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <header >
+        <div class="header" >       
+             <img class="logo" src="/imagenes/Logo.png" alt="logo de alura" >
+        </div>
+
+    </header>
+    <main class="main">
+        <section class="area-encriptar">
+            <textarea class="texto" cols="30" rows="10" placeholder="ingresa el texto que deseas encriptar." ></textarea>  
+            <div>
+                <p class="informacion">! solo letras minusculas y sin acentos, por favor.</p>
+            </div>
+            <div class="botones">
+                <button class="boton__encriptar" type="button" onclick="botonEncriptar()">Encriptar</button>
+                <button class="boton__desencriptar" type="button" onclick="botonDesncriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="area-desencriptar area-con-texto">
+            <textarea class="texto__resultado oculto" cols="20" rows="10"></textarea>
+         
+            <div  class="informacion-2">
+                <h6>Ningún mensaje fue encontrado</h6>
+                <p>ingresa el texto que deees encriptar o desencriptar</p>
+            </div>
+            <div>
+                <button class="copiar ">copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p> esta pagina fue creada por Cristian RH. con ayuda de los cursos de Alura.</p>
+    </footer>
+</body>
+</html>
+<script src="app.js"></script>

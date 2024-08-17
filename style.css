@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*font-family: "Architects Daughter", sans-serif; 
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+.body{
+
+    background-color: #F3FEB8;
+    color: black;
+    height: 100vh;
+    width: 100vw;
+}
+/*heade creacion*/
+.header{
+    width: 100%;
+    margin: auto;
+}
+    
+.logo{
+    padding-top: 1%;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 80%;
+    padding-left: 8%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    gap: 1em;
+ }
+ 
+.area-encriptar{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 70%;
+    padding-top: 5%;
+}
+
+.area-desencriptar{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    border-radius: 1.5em;
+    background-color: whitesmoke;
+}
+
+.area-con-texto{
+    justify-content: space-between;
+}
+
+
+.texto{
+    background-color: #F3FEB8;
+     color: black;
+     border: none;
+        /*resize: none;*/
+     text-transform: lowercase;
+     font-family: "Architects Daughter", sans-serif; 
+     font-size: 2em;
+     font-style: normal;
+}
+::placeholder{ color: purple;}
+   .texto:focus{
+    outline: none;
+}
+
+.informacion{
+    font-family: "Architects Daughter", sans-serif;
+    color: #495057;
+    font-size:.75em;
+    font-style: normal;
+    margin-top: 5em;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    padding-top:2em;
+    font-family: "Architects Daughter", sans-serif;
+    
+}
+
+.boton__encriptar{
+    background-color: #FFDE4D ;
+    color: black;
+    border-radius:1.5em;
+    border: 3px solid yellow;
+    cursor: pointer;
+    height: 4em;
+    width: 30%;
+    font-size: 1em;
+   
+}
+
+.boton__desencriptar{
+    background-color: #FFB22C;
+    color:black;
+    border: 3px solid orange;
+    border-radius: 1.5em;
+    cursor: pointer;
+   height: 4em;
+    width: 30%;
+    font-size: 1em;
+}
+
+.boton__encriptar:hover,.boton__desencriptar:hover{
+    height: 4.2em;
+    width: 32%;
+    border-color: aliceblue;
+    background-color: antiquewhite;
+}
+
+.texto__resultado{
+    width: 90%;
+    height: 60%;
+    margin-left: 5%;
+    background-color: whitesmoke;
+    background-image: url("/imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    border: none;
+    color: black;
+    position: static;
+    font-family: "Architects Daughter", sans-serif; 
+    font-size: 2em;
+    font-style: normal;
+    resize: none;
+}
+
+.texto__resultado:focus{
+    outline: none;
+}
+
+/*
+.oculto{
+   background-image: none; 
+}
+ */   
+
+
+.informacion-2{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 20%;
+    margin-left: 5%;
+}
+.informacion-2 h6{
+    font-family: "Architects Daughter", sans-serif;
+    color:black;
+    font-size:1.5em;
+    font-style:oblique;
+    text-align:center;
+}
+.informacion-2 p{
+    font-family: "Architects Daughter", sans-serif;
+    color: #495057;;
+    font-size:1em;
+    font-style:normal;
+    text-align:center;
+}
+
+.copiar{
+    background-color: whitesmoke;
+    border: 3px solid white ;
+    border-radius: 1.5em;
+    color: black;
+    cursor: pointer;
+    height: 4em;
+    width: 90%;
+    margin-left: 5%;
+    display: none;
+}
+.copiar:hover{
+    height: 4.2em;
+    background-color: black;
+    color: white;
+    border: 3px solid orange;
+}
+
+.footer{
+ width: 100%;
+}
+.footer p{
+    font-family: "Architects Daughter", sans-serif; 
+    font-size: 1em;
+    font-style: normal;
+    text-align: center;
+    margin-top: 1%;
+}
+
+
+@media(max-width:1280px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .area-encriptar{
+        width: 100%;
+        height: 60%;
+    }
+    .texto{
+        width: 100%;
+        height: 60%;
+    }
+    .informacion{
+        width: 100%;
+        
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .boton__encriptar{
+    
+        height: 4em;
+        width: 50%;
+       
+    }
+    
+    .boton__desencriptar{
+    
+       height: 4em;
+        width: 50%;
+    }
+    .area-desencriptar{
+        width: 100%;
+        height: 30%;
+    }
+    .texto__resultado{
+        top:0;
+        background-image: none;
+    }
+    
+    .informacion-2{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+      
+    }
+
+    .boton__encriptar:hover,.boton__desencriptar:hover{
+        height: 4.2em;
+        width: 50%;
+        border-color: aliceblue;
+        background-color: antiquewhite;
+    }
+}
+
+@media(max-width:450px){
+    .area-encriptar{
+        width: 100%;
+        height: 65%;
+        
+    }
+    .informacion{
+        width: 100%;
+         
+    }
+    .botones{
+        display: flex;
+        flex-direction: column;
+    }
+    .boton__encriptar{
+    
+        height: 4em;
+        width: 100%;
+       
+    }
+    .boton__desencriptar{
+    
+       height: 4em;
+        width: 100%;
+    }
+    .boton__encriptar:hover,.boton__desencriptar:hover{
+        height: 4.2em;
+        width: 100%;
+        border-color: aliceblue;
+        background-color: antiquewhite;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
